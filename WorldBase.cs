@@ -5,8 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "World")]
 public class WorldBase : ScriptableObject
 {
-    public FloatVariable Speed;
     public float GenerateRate = 0.1f;
     public List<GamePieceBase> Objects;
-    
+    public FloatVariable Speed;
 }
