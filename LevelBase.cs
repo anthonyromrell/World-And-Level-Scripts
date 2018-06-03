@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-
-public class LevelBase: ScriptableObject
+public class LevelBase : ScriptableObject
 {
-	
 }

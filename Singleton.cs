@@ -1,13 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class Singleton
 {
+    private static Singleton _instance;
+
     private Singleton()
     {
     }
-
-    private static Singleton _instance;
 
     public static Singleton Instance
     {

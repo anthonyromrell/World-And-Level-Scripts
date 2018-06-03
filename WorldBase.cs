@@ -1,22 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using RoboRyanTron.Unite2017.Variables;
+using UnityEngine;
 
+[CreateAssetMenu(fileName = "World")]
 public class WorldBase : ScriptableObject
 {
-    public Level[] Levels;
-    public int CurrentWorld;
-    public int CurrentLevel;
-
-    public void GoToNextLevelHandler()
-    {
-        if (CurrentLevel < Levels[CurrentWorld].Waves.Length - 1)
-        {
-            CurrentLevel++;
-            World.RunNextWave();
-        }
-        else
-        {
-            CurrentLevel = 0;
-        }
-    }
+    public FloatVariable Speed;
+    public float GenerateRate = 0.1f;
+    public List<GamePieceBase> Objects;
+    
 }
-
